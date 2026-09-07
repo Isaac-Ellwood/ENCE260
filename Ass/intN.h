@@ -29,5 +29,9 @@ int intN_isNegative(IntN number);
 bool intN_isZero(IntN number);
 IntStatus intN_add(IntN opa, IntN opb, IntN *result);
 IntStatus intN_negate(IntN *number);
+IntStatus intN_subtract(IntN opa, IntN opb, IntN *result);
+IntStatus intN_read(IntN *result);
+IntStatus intN_accumulator(const IntN array[], IntN *result, size_t length);
+IntStatus intN_mapFunc(IntN array[], size_t length, IntStatus (*func)(IntN, IntN*));
 
 #endif
